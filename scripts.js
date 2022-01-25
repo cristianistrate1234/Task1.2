@@ -1,9 +1,6 @@
-
 let sidebarBox = document.querySelector('.box'),
     sidebarBtn = document.querySelector('.btn'),
     pageWrapper = document.querySelector('.page-wrapper');
-
-
 
 let htmlElements = "";
 for (let i = 0; i < 7; i++) {
