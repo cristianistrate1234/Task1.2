@@ -97,7 +97,8 @@ body {
 }
 .items {
     position: relative;
-    top: 20%;
+    top: 16%;
+    margin-left: 10px;
     transform: translateY(-50%);
 }
 .items .item {
