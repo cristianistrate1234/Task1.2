@@ -1,4 +1,4 @@
-const sidebarBox = document.querySelector('.box'),
+let sidebarBox = document.querySelector('.box'),
     sidebarBtn = document.querySelector('.btn'),
     pageWrapper = document.querySelector('.page-wrapper');
 
