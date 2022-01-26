@@ -46,7 +46,7 @@ body {
     left: 50%;
     font-size: 20px;
 }
-.btn {
+.buttonMenu {
     position: fixed;
     z-index: 5;
     top: 15px;
@@ -54,30 +54,30 @@ body {
     cursor: pointer;
     transition: left 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
 }
-.btn div {
+.buttonMenu div {
     width: 25px;
     height: 2px;
     margin-bottom: 8px;
     background-color: #00dffc;
     transition: transform 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91), opacity 500ms, background-color 250ms;
 }
-.btn.active {
+.buttonMenu.active {
     left: 200px;
 }
-.btn.active div {
+.buttonMenu.active div {
     background-color: white;
 }
-.btn.active .top {
+.buttonMenu.active .topLineMenu {
     transform: translateY(10px) rotate(-135deg);
 }
-.btn.active .middle {
+.buttonMenu.active .middleLineMenu {
     opacity: 0;
     transform: rotate(135deg);
 }
-.btn.active .bottom {
+.buttonMenu.active .bottomLineMenu {
     transform: translateY(-10px) rotate(-45deg);
 }
-.box {
+.sideMenuBox {
     position: fixed;
     z-index: 4;
     overflow: auto;
@@ -91,17 +91,17 @@ body {
     color: #343838;
     transition: all 350ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
 }
-.box.active {
+.sideMenuBox.active {
     left: 0;
     opacity: 1;
 }
-.items {
+.divItemsBox {
     position: relative;
-    top: 16%;
+    top: 19%;
     margin-left: 10px;
     transform: translateY(-50%);
 }
-.items .item {
+.divItemsBox .listItem {
     position: relative;
     cursor: pointer;
     font-size: 15px;
@@ -112,13 +112,13 @@ body {
     text-decoration: none;
     text-align: -webkit-match-parent;
 }
-.items .item:hover {
+.divItemsBox .listItem:hover {
     padding: 15px 45px;
     background-color: rgba(52, 56, 56, 0.2);
 }
-.btn, .btn * {
+.buttonMenu, .buttonMenu * {
     will-change: transform;
 }
-.box {
+.sideMenuBox {
     will-change: transform;
 }
