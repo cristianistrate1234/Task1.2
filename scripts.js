@@ -3,7 +3,7 @@ let sidebarBox = document.querySelector('.sideMenuBox'),
     pageWrapper = document.querySelector('.page-wrapper');
     divItemsBox = document.querySelector('.divItemsBox');
 
-const listItem = ['List Item 01' , 'List Item 02' , 'List Item 03' ,'List Item 04' ,
+const listItem = ['List Item 01' , 'List Item 02' , 'List Item 03' , 'List Item 04' ,
     'List Item 05' , 'List Item 06' , 'List Item 07' , 'List Item 08'];
 
 listItem.forEach((e) =>{
